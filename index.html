@@ -9,11 +9,10 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Matthew McMonagle</div>
+        <div class="logo animate-fade-up">Matthew McMonagle</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -21,7 +20,7 @@
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo">Matthew McMonagle</div>
+        <div class="logo animate-fade-up">Matthew McMonagle</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -31,7 +30,6 @@
             <div class="menu-links">
                 <ul>
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                     <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </ul>
@@ -43,41 +41,372 @@
         <div class="section__pic-container">
             <img 
                class='profile-pic' 
-               src="./assets/profile3.jpeg" 
+               src="./assets/optimized/profile2-optimized.jpg" 
                alt="Matt McMonagle profile picture"
             />
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Matthew McMonagle</h1>
-            <p class="section__text__p2">Aspiring Software Developer</p>
+            <p class="section__text__p1 animate-swipe-left delay-1">Hello, I'm</p>
+            <h1 class="title animate-swipe-right delay-2">Matthew McMonagle</h1>
+            <p class="section__text__p2 animate-swipe-left delay-3">Aspiring Software Developer</p>
             <div class="btn-container">
                 <button 
                     class="btn btn-color-2" 
-                    onclick="window.open('./assets/resume.pdf')">Download CV
-                </button>
-                <button 
-                    class="btn btn-color-1" 
-                    onclick="location.href='./#contact'">Contact Info
+                    onclick="window.open('./assets/resume.pdf')">Download Resume
                 </button>
             </div>
             <div id="socials-container">
-                <img 
-                   src="./assets/linkedin.png" 
-                   alt="My LinkedIn Profile"
-                   class="icon" 
-                   onclick="location.href='https://www.linkedin.com/in/mattmcmonagle/'"
-                />
-                <img 
-                   src="./assets/github.png" 
-                   alt="My GitHub Profile"
-                   class="icon" 
-                   onclick="location.href='https://github.com/mattmcmon'"
-                />
+                <svg 
+                   xmlns="http://www.w3.org/2000/svg" 
+                   viewBox="0 0 448 512"
+                   class="icon social-icon"
+                   onclick="window.location.href='https://www.linkedin.com/in/mattmcmonagle/'"
+                >
+                   <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                </svg>
+                <svg 
+                   xmlns="http://www.w3.org/2000/svg" 
+                   viewBox="0 0 496 512"
+                   class="icon social-icon"
+                   onclick="window.location.href='https://github.com/mattmcmon'"
+                >
+                   <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                </svg>
             </div>
         </div>
     </section>
 
+    <section id="about">
+        <p class="section__text__p1"></p>
+        <h1 class="title">About Me</h1>
+ 
+        <div class="about-details-container about-content">
+            <div class="about-columns">
+                <div class="about-left-column">
+                    <div class="details-container">
+                        <div class="section-header">
+                            <img 
+                              src="./assets/education.png" 
+                              alt="education icon" 
+                              class="icon"
+                            />
+                            <h3>Education</h3>
+                        </div>
+                        <h4>Carnegie Mellon University</h4>
+                        <p>Masters of Science in Information Technology</p>
+                        <h4>Slippery Rock University of Pennsylvania</h4>
+                        <p>Bachelors of Science in Business Administration</p>
+                        <h4>Butler County Community College</h4>
+                        <p>Transfer to Slippery Rock University - Computer Science</p>
+                    </div>
+                    
+                    <div class="details-container">
+                        <div class="section-header">
+                            <img 
+                              src="./assets/experience.png" 
+                              alt="classes icon" 
+                              class="icon"
+                            />
+                            <h3>Relevant Courses</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Programming</h4>
+                                <div class="single-column-list">
+                                    <p>Intro to Computer Programming</p>
+                                    <p>Object Oriented Programming</p>
+                                    <p>Programming in C++</p>
+                                    <p>Intro to Python</p>
+                                    <p>Data Focused Python</p>
+                                    <p>Object Oriented Programming in Java</p>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Database/Data Warehousing</h4>
+                                <div class="single-column-list">
+                                    <p>Data Warehousing</p>
+                                    <p>Unstructured Data Analytics</p>
+                                    <p>NoSQL Database Management</p>
+                                    <p>Advanced Relational Database Management</p>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Systems & Theory</h4>
+                                <div class="single-column-list">
+                                    <p>System Software & Architecture</p>
+                                    <p>Linux and Open Source</p>
+                                    <p>Discrete Computational Structures</p>
+                                    <p>Cryptography</p>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Software Engineering</h4>
+                                <div class="single-column-list">
+                                    <p>Software Design for Data Scientists</p>
+                                    <p>Machine Learning with Tableau</p>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Web Development</h4>
+                                <div class="single-column-list">
+                                    <p>Structured & Dynamic Web Programming</p>
+                                    <p>Web Application Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-right-column">
+                    <div class="text-container">
+                        <div class="section-header">
+                            <img 
+                              src="./assets/background.png" 
+                              alt="profile icon" 
+                              class="icon"
+                            />
+                            <h3>My Background</h3>
+                        </div>
+                        <p>Hi, I’m Matt – a problem-solver at heart, currently making the leap into the world of software engineering. 
+                            With a background in data analytics and automation, plus a Master’s in IT from Carnegie Mellon University, 
+                            I’ve spent years optimizing workflows, wrangling data, and building software solutions that make life easier. 
+                            Now, I’m ready to take my passion for coding to the next level and dive full-time into developing scalable, efficient applications.
+                        </p>    
+                        <p>Why would I be a great fit for a software engineering role? I love digging into complex problems, writing clean, maintainable code,
+                            I love digging into complex problems, writing clean, maintainable code, and constantly learning new technologies. 
+                            Whether it’s automating processes, optimizing databases, or building full-fledged applications, I thrive on creating solutions that are both functional and impactful. 
+                            Plus, I bring strong collaboration and adaptability skills—because great software is built by great teams. Let’s build something awesome together! 
+                        </p>                    
+                    </div>
+                    
+                    <div class="details-container" style="margin-top: 2rem;">
+                        <div class="section-header">
+                            <img 
+                              src="./assets/skills.png" 
+                              alt="skills icon" 
+                              class="icon"
+                            />
+                            <h3>Skills & Tools</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Programming Languages</h4>
+                                <div class="single-column-list">
+                                    <p>Python</p>
+                                    <p>JavaScript</p>
+                                    <p>SQL</p>
+                                    <p>Java</p>
+                                    <p>R</p>
+                                    <p>YAML</p>
+                                    <p>C++</p>
+                                    <p>HTML/CSS</p>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Software Development</h4>
+                                <div class="single-column-list">
+                                    <p>Git/GitHub</p>
+                                    <p>Flask</p>
+                                    <p>Docker</p>
+                                    <p>IntelliJ</p>
+                                    <p>Jupyter</p>
+                                    <p>RESTful APIs</p>
+                                    <p>Agile Methodologies</p>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Databases</h4>
+                                <div class="single-column-list">
+                                    <p>Cassandra</p>
+                                    <p>MongoDB</p>
+                                    <p>Redis</p>
+                                    <p>Neo4j</p>
+                                    <p>Oracle Database</p>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Data Engineering</h4>
+                                <div class="single-column-list">
+                                    <p>ETL Pipelines</p>
+                                    <p>dbt</p>
+                                    <p>DuckDB</p>
+                                    <p>Data Warehousing</p>
+                                    <p>Data Modeling</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4>Cloud & DevOps</h4>
+                                <div class="single-column-list">
+                                    <p>Heroku</p>
+                                    <p>Linux</p>
+                                    <p>Automation</p>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Soft Skills</h4>
+                                <div class="single-column-list">
+                                    <p>Communication</p>
+                                    <p>Problem Solving</p>
+                                    <p>Team Collaboration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <img
+         src="./assets/arrow.png"
+         alt="arrow icon"
+         class="icon arrow"
+         onclick="location.href='#projects'"
+       />
+    </section>
+
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="projects-container about-content">
+            <div class="project-card">
+                <div class="section-header">
+                    <h3>FTC Case Search Application</h3>
+                </div>
+                <div class="project-date">Aug 2024 - Dec 2024</div>
+                <div class="project-description">
+                    <p>Developed a GUI-based Java application using object-oriented principles, enabling users to view, search, edit, add, and delete Federal Trade Commission cases. Implemented efficient data management and streamlined user interaction for enhanced functionality.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">GUI</span>
+                    <span class="tag">OOP</span>
+                    <span class="tag">Data Management</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="section-header">
+                    <h3>E-Books Website</h3>
+                </div>
+                <div class="project-date">May 2024 - Jun 2024</div>
+                <div class="project-description">
+                    <p>Engineered a dynamic e-book website that analyzes user behavior patterns to personalize content and UI elements, resulting in longer session times and higher engagement rates.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Web Development</span>
+                    <span class="tag">User Analytics</span>
+                    <span class="tag">UI/UX</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="section-header">
+                    <h3>New York City Transit Data Warehouse</h3>
+                </div>
+                <div class="project-date">Oct 2023 - Dec 2023</div>
+                <div class="project-description">
+                    <p>Designed and implemented a scalable data warehouse using DuckDB, dbt, YAML, and Python, integrating large-scale NYC transit data for real-time rideshare analysis.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">DuckDB</span>
+                    <span class="tag">dbt</span>
+                    <span class="tag">YAML</span>
+                    <span class="tag">Data Warehousing</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="section-header">
+                    <h3>Job Search Aggregator</h3>
+                </div>
+                <div class="project-date">Aug 2023 - Oct 2023</div>
+                <div class="project-description">
+                    <p>Developed a Python application that leverages BeautifulSoup and Selenium to aggregate over 50,000 Data Science job postings and pertinent information to create a comprehensive job search tool.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">BeautifulSoup</span>
+                    <span class="tag">Selenium</span>
+                    <span class="tag">Web Scraping</span>
+                    <span class="tag">Data Mining</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="section-header">
+                    <h3>Autonomous Vehicle Survey Web Application</h3>
+                </div>
+                <div class="project-date">May 2023 - Jun 2023</div>
+                <div class="project-description">
+                    <p>Deployed a Python web application with Heroku that implemented logistic regression to predict (with more than 90% accuracy) whether a user would take an Autonomous taxi ride based on survey responses.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Heroku</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Logistic Regression</span>
+                    <span class="tag">Web App</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="section-header">
+                    <h3>Video Game Recommendation Chatbot</h3>
+                </div>
+                <div class="project-date">Aug 2022 - Oct 2022</div>
+                <div class="project-description">
+                    <p>Created a video game chatbot using scikit-learn in Python that will recommend a PC game to play based on a favorite game that is provided by the user.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">scikit-learn</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Recommendation Engine</span>
+                    <span class="tag">NLP</span>
+                </div>
+            </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="arrow icon"
+          class="icon arrow"
+          onclick="location.href='#contact'"
+        />
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                  src="./assets/email.png" 
+                  alt="email icon" 
+                  class="icon contact-icon email-icon">
+                <p><a href="mailto:mmcmon1990@gmail.com">mmcmon1990@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" 
+                  alt="LinkedIn icon" 
+                  class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/mattmcmonagle/">LinkedIn</a></p>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Matthew McMonagle. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

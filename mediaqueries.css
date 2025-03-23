@@ -1,3 +1,14 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
@@ -5,5 +16,439 @@
 
     #hamburger-nav {
         display: flex;
+    }
+
+    #experience, 
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+
+    #profile,
+    .section-container {
+        display: block;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    section,
+    .section-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-containers {
+        margin-top: 0;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #contact,
+    footer {
+        height: 40vh;
+    }
+
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .about-containers, 
+    .contact-info-upper-container, 
+    .btn-container {
+        flex-wrap: wrap;
+    }
+
+    .contact-info-container {
+        margin: 0;
+    }
+
+    .contact-info-container p, 
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    #profile {
+        height: auto;
+        padding: 4rem 0;
+        gap: 3rem;
+    }
+
+    .section__pic-container {
+        height: min(350px, 70vw);
+        width: min(350px, 70vw);
+    }
+    
+    section {
+        margin: 0 5rem;
+    }
+
+    #about .section-container,
+    #about .about-details-container,
+    .projects-container {
+        max-width: calc(100% - 10rem);
+    }
+    
+    /* Projects responsive - medium */
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-columns {
+        flex-direction: column;
+    }
+
+    .about-left-column,
+    .about-right-column {
+        width: 100%;
+    }
+    
+    /* Keep multi-column on medium screens */
+    .multi-column-list {
+        column-count: 2;
+    }
+
+    /* Skills grid responsive */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Skills grid responsive - tablet */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Projects responsive - tablet */
+    .projects-container {
+        grid-template-columns: 1fr;
+        max-width: calc(100% - 4rem);
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #profile {
+        gap: 2rem;
+    }
+
+    .section__pic-container {
+        height: min(300px, 80vw);
+        width: min(300px, 80vw);
+    }
+    
+    section {
+        margin: 0 2rem;
+    }
+    
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+
+    #about .section-container,
+    #about .about-details-container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .details-container,
+    .text-container {
+        padding: 1rem;
+    }
+    
+    /* Projects responsive - mobile */
+    .projects-container {
+        max-width: 100%;
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    
+    .project-card {
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .project-card h3 {
+        font-size: 1.2rem;
+        word-wrap: break-word;
+    }
+    
+    /* Switch to single column on small screens */
+    .multi-column-list {
+        column-count: 1;
+    }
+
+    /* Skills grid responsive - mobile */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .skill-category {
+        padding: 0.75rem;
+    }
+    
+    /* Arrow position for mobile */
+    #about .arrow,
+    #projects .arrow {
+        bottom: 1rem;
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    #about, #projects {
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .btn {
+        width: 7rem;
+        padding: 0.7rem;
+    }
+    
+    .project-tags {
+        gap: 0.3rem;
+    }
+    
+    .tag {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.7rem;
+    }
+    
+    /* Fix for very small screens like iPhone SE */
+    .section__pic-container {
+        height: min(250px, 70vw);
+        width: min(250px, 70vw);
+    }
+    
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    .section__text__p2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    /* Contact section fixes */
+    .contact-info-upper-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    /* Project card adjustments */
+    .project-card {
+        padding: 0.8rem;
+    }
+    
+    .project-description p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Profile section spacing */
+    #profile {
+        padding: 2rem 0;
+    }
+    
+    /* Fix logo size */
+    .logo {
+        font-size: 2rem;
+    }
+    
+    /* Fix navigation height */
+    nav {
+        height: 12vh;
+    }
+
+    .menu-links a {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+    
+    .hamburger-icon {
+        height: 20px;
+        width: 26px;
+    }
+    
+    /* Fix potential menu overflow issues */
+    .menu-links.open {
+        max-height: 200px;
+    }
+}
+
+/* Extra small devices (iPhone SE portrait) */
+@media screen and (max-width: 375px) {
+    section {
+        margin: 0 1rem;
+        padding-top: 2vh;
+    }
+    
+    .section__pic-container {
+        height: 200px;
+        width: 200px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-details-container,
+    .projects-container {
+        padding: 0.5rem;
+    }
+    
+    .details-container, 
+    .text-container,
+    .project-card {
+        padding: 0.8rem;
+    }
+    
+    .skill-category {
+        padding: 0.5rem;
+    }
+    
+    .skill-category h4 {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .single-column-list p,
+    .multi-column-list p {
+        font-size: 0.85rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    #about h3, 
+    #projects h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Fix icon sizes */
+    #about .icon {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    
+    /* Make sure arrows are visible */
+    #about .arrow,
+    #projects .arrow {
+        bottom: 0.5rem;
+    }
+    
+    #about, 
+    #projects {
+        padding-bottom: 4rem;
+    }
+    
+    /* Adjust footer */
+    footer {
+        height: auto;
+        padding-bottom: 1rem;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    /* Further optimized styles for iPhone SE */
+    
+    /* Further reduce skills section padding */
+    .skills-grid {
+        gap: 0.75rem;
+    }
+    
+    /* Make font sizes more compact */
+    p, .contact-info-container p {
+        font-size: 0.85rem;
+    }
+    
+    /* Make arrows more visible on small screens */
+    #about .arrow,
+    #projects .arrow {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    
+    /* Fix contact section height */
+    #contact {
+        height: auto;
+        min-height: 40vh;
+        padding-bottom: 2rem;
+    }
+    
+    /* Reduce title spacing */
+    .title {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Extremely small devices */
+@media screen and (max-width: 320px) {
+    /* Emergency fixes for extremely small screens */
+    .section__pic-container {
+        height: 180px;
+        width: 180px;
+    }
+    
+    .title {
+        font-size: 1.6rem;
+    }
+    
+    .section__text__p2 {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        width: 6rem;
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+    }
+    
+    /* Make sure content fits */
+    .project-card h3 {
+        font-size: 1rem;
+    }
+    
+    .project-description p {
+        font-size: 0.8rem;
+    }
+    
+    .tag {
+        font-size: 0.65rem;
+        padding: 0.15rem 0.4rem;
     }
 }
